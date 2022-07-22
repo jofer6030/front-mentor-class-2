@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap");
+
+:root {
+  --Very-Dark-Magenta: hsl(300, 43%, 22%);
+  --Soft-Pink: hsl(333, 80%, 67%);
+  --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+  --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+  --White: hsl(0, 0%, 100%);
+  --font-primary: "League Spartan", sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 15px;
+  font-family: var(--font-primary);
+}
+
+.main-content {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  /* background-color: lightblue; */
+}
+
+.section-top {
+  display: flex;
+  align-items: center;
+}
+
+.section-top-left {
+  width: 50%;
+}
+
+.section-top-left-title {
+  max-width: 400px;
+  font-size: 3.8rem;
+  color: var(--Very-Dark-Magenta);
+  margin-bottom: 2rem;
+}
+.section-top-left-desc {
+  max-width: 480px;
+  font-size: 20px;
+  color: var(--Dark-Grayish-Magenta);
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.section-top-right {
+  width: 50%;
+}
+.section-top-right-rated {
+  display: flex;
+  background-color: var(--Light-Grayish-Magenta);
+  margin-bottom: 1rem;
+  max-width: 445px;
+  height: 55px;
+  align-items: center;
+  padding-left: 30px;
+  border-radius: 10px;
+  gap: 35px;
+  position: relative;
+}
+.section-top-right-rated:nth-child(2) {
+  left: 2.6rem;
+}
+.section-top-right-rated:nth-child(3) {
+  left: 5.2rem;
+}
+
+.article-stars-desc {
+  font-size: 18px;
+  color: var(--Very-Dark-Magenta);
+  font-weight: 700;
+}
+
+.section-bottom {
+  display: flex;
+  gap: 1rem;
+  margin-top: 78px;
+}
+
+.section-bottom-card {
+  background-color: var(--Very-Dark-Magenta);
+  border-radius: 8px;
+  padding: 42px 36px;
+  position: relative;
+}
+.section-bottom-card:nth-child(2) {
+  top: 1.5rem;
+}
+.section-bottom-card:nth-child(3) {
+  top: 3rem;
+}
+
+.section-bottom-card-head {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 2rem;
+}
+.section-bottom-card-head-img {
+  width: 42px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.section-bottom-card-head-img img {
+  width: 100%;
+  display: block;
+}
+.section-bottom-card-head h2 {
+  color: var(--White);
+  font-size: 18px;
+  font-weight: 500;
+}
+.section-bottom-card-head h2 span {
+  display: block;
+  margin-top: 5px;
+  color: var(--Soft-Pink);
+  font-size: 18px;
+  font-weight: 400;
+  opacity: 0.8;
+}
+
+.section-bottom-card-body {
+  color: var(--White);
+  font-size: 18px;
+  line-height: 1.2;
+}
